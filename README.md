@@ -12,7 +12,7 @@ To get started, follow these steps:
 
 1. **Pick an application framework you want to play with**  
 
-2. **Navigate to the GitHun directory**  
+2. **Navigate to the GitHub directory**  
 
 3. **Follow the README file in the chosen project type**  
 
