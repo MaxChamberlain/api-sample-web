@@ -10,7 +10,7 @@ To get started, follow these steps:
 ```git clone https://github.com/MaxChamberlain/api-sample-web.git```
 
 2. **Navigate to the project directory:**  
-```cd api-simple-web/frontend-angular```
+```cd api-sample-web/frontend-angular```
 
 3. **Install dependencies:**  
 ```npm install```
