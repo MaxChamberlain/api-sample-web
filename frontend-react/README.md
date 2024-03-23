@@ -7,10 +7,13 @@ Welcome to our simple React project! 🚀
 To get started, follow these steps:
 
 1. **Clone the repository:**  
+```git clone <repository-url>```
 
 2. **Navigate to the project directory:**  
+```cd <project-folder>```
 
 3. **Install dependencies:**  
+```npm install```
 
 That's it! You've installed everything you need. 🎉
 
