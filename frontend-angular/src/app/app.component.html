@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<label for="api-url">API URL</label>
+<form (submit)="onSubmit($event)" class='api-url-input'>
+  <input [(ngModel)]="apiUrl" placeholder="Enter API URL" type="text" name="apiUrl">
+  <button type="submit">Fetch Data</button>
+</form>
+
+<div style="width: 100%; text-align: center; margin-top: 1rem;">
+  Try changing the url that we request 👆
+</div>
+
+<div class="container">
+  <h2>API Response Data (Body)</h2>
+  <pre>{{ apiResponse | json }}</pre>
+  <h2>API Response Headers</h2>
+  <pre>{{ apiHeaders | json }}</pre>
+</div>
+
+
+<router-outlet></router-outlet>

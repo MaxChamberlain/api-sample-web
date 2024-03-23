@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple API Web</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/requests.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h3>Simple API Web | Pure HTML & JS</h3>
+    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="Angular Logo" width="40" height="40" />
+  </header>
+
+  <label for="api-url">API URL</label>
+  <form id="api-url-form" class="api-url-input">
+    <input id="api-url-input" placeholder="Enter API URL" type="text" />
+    <button id="fetch-button">Fetch Data</button>
+  </form>
+
+  <div style="width: 100%; text-align: center; margin-top: 1rem;">
+    Try changing the url that we request 👆
+  </div>
+  <div class="container">
+    <h2>API Response Data (Body)</h2>
+    <pre id="response-data"></pre>
+    <h2>API Response Headers</h2>
+    <pre id="response-headers"></pre>
+  </div>
+</body>
+</html>
