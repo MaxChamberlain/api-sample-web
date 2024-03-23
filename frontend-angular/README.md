@@ -29,4 +29,4 @@ This will start the development server. 🏃‍♂️
 Once the server is running, you can open the app in your web browser.  
 Simply go to [http://localhost:4200](http://localhost:4200) and voilà! 🌐
 
-That's all you need to do to get our simple React app up and running. Happy coding! 💻
+That's all you need to do to get our simple Angular app up and running. Happy coding! 💻
