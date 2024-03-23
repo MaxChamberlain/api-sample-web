@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Header from './Header'
 
 function App() {
   const [apiResponse, setApiResponse] = useState(null)
@@ -7,11 +8,16 @@ function App() {
   const [apiUrl, setApiUrl] = useState('https://jsonplaceholder.typicode.com/users/1')
 
   async function fetchData() {
-    const response = await fetch(apiUrl)
-    console.log(response)
-    const data = await response.json()
-    setApiResponse(data)
-    setApiHeaders(response.headers)
+    try{
+      const response = await fetch(apiUrl)
+      const data = await response.json()
+      setApiResponse(data)
+      setApiHeaders(response.headers)
+    } catch (error) {
+      console.error('Error fetching data', error)
+      setApiResponse(error)
+      setApiHeaders(null)
+    }
   }
 
   useEffect(() => {
@@ -52,11 +58,3 @@ function App() {
   )
 }
 export default App
-
-function Header() {
-  return (
-    <header className='header'>
-      <h3>Simple API Web</h3>
-    </header>
-  )
-}
